@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#141414</color>
+    <color name="colorSeparator">#09000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSearchBg">#141414</color>
+    <color name="colorLiked">#8B1313</color>
+    <color name="colorLikedForegra">#FF0000</color>
+    <color name="white_transparent">#AEFFFFFF</color>
+    <color name="fab">#02FF00</color>
+    <color name="fabv">#2702FF00</color>
+    <color name="fab2">#FF5722</color>
+    <color name="fab3">#00AFFF</color>
+
+    <color name="progress2">#FFEE58</color>
+    <color name="progress3">#FF0000</color>
+
+
+    <color name="progressLineOK">#7ed321</color>
+    <color name="progressFundoOK">#2C2C2C</color>
+
+    <color name="progressLineNOK">#FF0000</color>
+    <color name="progressFundoNOK">#8B1313</color>
+
+    <color name="progress">#7ed321</color>
+
+    <color name="colorMonitor">#2C2C2C</color>
+
+    <color name="mortetITULO">#913C3C</color>
+    <color name="morteValue">#A9881E1E</color>
+
+
+    <color name="casos">#A9201F1F</color>
+    <color name="recuperados">#543FCA44</color>
+    <color name="confirmados">#46FFC107</color>
+    <color name="amarelo">#6142A5F5</color>
+    <color name="mortes">#881E1E</color>
+
+</resources>

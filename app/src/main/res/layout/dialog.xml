@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:background="@color/colorAccent"
+        android:paddingBottom="8dp">
+
+    <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:padding="8dp"
+            android:text="ATENÇÃO"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="@color/amarelo"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/medicao"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+            android:id="@+id/ok"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:drawableTint="@color/fab"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="OK, ENTENDI"
+            android:textColor="@color/fab"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_thumb_up_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:rippleColor="@color/fab"
+            app:strokeColor="@color/fab" />
+
+    <Button
+            android:id="@+id/okDiskSaude"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="gone"
+            android:layout_marginEnd="16dp"
+            android:drawableTint="@color/fab2"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="DISK SAUDE"
+            android:textColor="@color/fab2"
+            android:textSize="14sp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_baseline_phone_forwarded_24"
+            app:layout_constraintEnd_toStartOf="@+id/ok"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:rippleColor="@color/fab2"
+            app:strokeColor="@color/fab2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

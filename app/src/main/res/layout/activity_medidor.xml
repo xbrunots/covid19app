@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        tools:context="br.com.brunobrito.covidhack.feature.heart.MedidorActivity">
+
+    <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="410dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvCheckText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="NORMAL"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animation_view2"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:background="@color/colorAccent"
+                        android:scaleType="centerCrop"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+                        app:layout_constraintStart_toStartOf="@+id/cardView2"
+                        app:layout_constraintTop_toTopOf="@+id/cardView2"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/pulsando" />
+
+                <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView2"
+                        android:layout_width="180sp"
+                        android:layout_height="180sp"
+                        app:cardBackgroundColor="@color/colorMonitor"
+                        app:cardCornerRadius="200sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                        <com.hmomeni.progresscircula.ProgressCircula
+                                android:id="@+id/progress"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:pgc_indeterminate="true"
+                                app:pgc_progress="40"
+                                app:pgc_rimColor="@color/fab"
+                                app:pgc_rimWidth="3dp"
+                                app:pgc_showProgress="false"
+                                app:pgc_speed="4"
+                                app:pgc_textColor="@color/colorMonitor" />
+
+
+                        <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:text="BPM"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                                app:layout_constraintEnd_toEndOf="@+id/textView3"
+                                app:layout_constraintStart_toStartOf="@+id/textView3"
+                                app:layout_constraintTop_toTopOf="@+id/textView3"
+                                app:layout_constraintVertical_bias="0.060000002" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/animation_view3"
+                                android:layout_width="0dp"
+                                android:layout_height="76dp"
+                                android:scaleType="centerCrop"
+                                android:visibility="invisible"
+                                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/sinal" />
+
+                        <Button
+                                android:id="@+id/textView3"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:drawableTint="@color/fab"
+                                android:fontFamily="sans-serif-thin"
+                                android:paddingRight="30sp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="38sp"
+                                app:cornerRadius="210dp"
+                                app:icon="@drawable/ic_baseline_favorite_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:rippleColor="@color/fab" />
+
+                        <com.airbnb.lottie.LottieAnimationView
+                                android:id="@+id/animate_load"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginStart="8dp"
+                                android:scaleType="fitCenter"
+                                android:visibility="invisible"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/progress"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:lottie_autoPlay="true"
+                                app:lottie_loop="true"
+                                app:lottie_rawRes="@raw/loading" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                <Button
+                        android:id="@+id/tvReset"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="INICIAR"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="14sp"
+                        app:cornerRadius="20dp"
+                        app:rippleColor="@android:color/holo_blue_dark"
+                        app:strokeColor="@android:color/holo_blue_dark" />
+
+                <Button
+                        android:id="@+id/tvClose"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="FECHAR"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textSize="14sp"
+                        app:cornerRadius="20dp"
+                        app:rippleColor="@android:color/holo_red_dark"
+                        app:strokeColor="@android:color/holo_red_dark" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

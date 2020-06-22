@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/cardMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="#1e1e1e"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+                android:id="@+id/linearLayoutMain"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="São Paulo"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tvDateTime"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/tvDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="10/10/2020"
+                        android:textAlignment="viewEnd"
+                        android:textColor="#DDD"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:ellipsize="end"
+                        android:foregroundGravity="bottom"
+                        android:maxLines="1"
+                        android:text="teste"
+                        android:textColor="#EEE"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="@+id/tvName"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <Button
+                            android:id="@+id/tvConfirmados"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:drawableTint="@android:color/holo_orange_light"
+                            android:text="234323"
+                            android:textColor="@android:color/holo_orange_light"
+                            android:textSize="14sp"
+                            app:cornerRadius="20dp"
+                            app:icon="@drawable/ic_casos_confirmados"
+                            app:layout_constraintStart_toEndOf="@+id/iVflag"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:rippleColor="@android:color/holo_orange_light"
+                            app:strokeColor="@android:color/holo_orange_light" />
+
+                    <Button
+                            android:id="@+id/tvRecuperados"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:drawableTint="@android:color/holo_green_light"
+                            android:text="234323"
+                            android:textColor="@android:color/holo_green_light"
+                            android:textSize="14sp"
+                            app:cornerRadius="20dp"
+                            app:icon="@drawable/ic_casos_negativos"
+                            app:layout_constraintStart_toEndOf="@+id/iVflag"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:rippleColor="@android:color/holo_green_light"
+                            app:strokeColor="@android:color/holo_green_light" />
+
+                    <Button
+                            android:id="@+id/tvSuspeitos"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:drawableTint="@color/cardview_dark_background"
+                            android:text="234323"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="14sp"
+                            app:cornerRadius="20dp"
+                            app:icon="@drawable/ic_casos_suspeitos"
+                            app:layout_constraintStart_toEndOf="@+id/iVflag"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:rippleColor="@color/cardview_dark_background"
+                            app:strokeColor="@color/cardview_dark_background" />
+
+                    <Button
+                            android:id="@+id/tvMortos"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_weight="1"
+                            android:drawableTint="@color/mortetITULO"
+                            android:text="234323"
+                            android:textColor="@color/mortetITULO"
+                            android:textSize="14sp"
+                            app:cornerRadius="20dp"
+                            app:icon="@drawable/ic_casos_morte"
+                            app:layout_constraintStart_toEndOf="@+id/iVflag"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:rippleColor="@color/mortetITULO"
+                            app:strokeColor="@color/mortetITULO" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">#fiqueEmCasa</string>
+    <string name="not_browser">Desculpe, navegador indisponivel...</string>
+    <string name="feito_com_3_por_bruno_brito"><![CDATA[by Bruno Brito | brunobrito.org]]></string>
+    <string name="kogit_improving">#FiqueEmCasa</string>
+    <string name="open_color">108810</string>
+    <string name="close_color">CCCCCC</string>
+    <string name="abrir_no_navegador">Abrir no navegador</string>
+    <string name="compartilhar">Compartilhar</string>
+    <string name="internet_error">\"Oops, a internet está indisponível...\"</string>
+    <string name="api_error">Oops, falha ao tentar acessar os serviços, tente novamente mais tarde...</string>
+    <string name="retry">Reconectar</string>
+    <string name="abrir">Abrir</string>
+    <string name="sorry_issue_not_found">Não foi possível buscar seu issues</string>
+    <string name="abertos">ABERTOS</string>
+    <string name="fechados">FECHADOS</string>
+    <string name="localizar">localizar...</string>
+
+    <string name="color_102">108810</string>
+    <string name="color_102_500">108810</string>
+    <string name="color_501_1000">108810</string>
+    <string name="color_1001">108810</string>
+    <string name="medicao">Para garantir a eficácia do teste, verifique: \n\n
+
+1) está sentado e relaxado.\n
+2) não efetuou nenhuma atividade física ou caminhada nos últimos 30 minutos.\n
+3) a área a ser monitorada não está molhada ou com qualquer resíduo externo.\n\n
+
+Pressione a câmera e o flash no pulso para iniciar o monitoramento, aperte iniciar e aguarde a contagem.</string>
+    <string name="default_notification_channel_id">Global</string>
+    <string name="site_covid_gov">https://covid.saude.gov.br/</string>
+    <string name="risk_group">Seus batimentos cardíacos estão altos, acima dos 100 BPM. Um dos sintomas do Covid-19 é a insuficiência respiratória e um dos sinais são os batimentos cardíacos altos, <b> clique abaixo para ligar no disque saúde 136</b>, e obtenha todo o amparo necessário. </string>
+
+
+
+</resources>
